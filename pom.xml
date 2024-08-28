@@ -16,27 +16,8 @@
     </properties>
 
     <!--      5.10.2 -> &{junit-version}-->
+    <!--  Testing  -->
  <dependencies>
-     <dependency>
-         <groupId>org.projectlombok</groupId>
-         <artifactId>lombok</artifactId>
-         <version>1.18.34</version>
-     </dependency>
-     <dependency>
-         <groupId>org.springframework</groupId>
-         <artifactId>spring-context</artifactId>
-         <version>6.1.12</version>
-     </dependency>
-     <dependency>
-         <groupId>org.springframework.boot</groupId>
-         <artifactId>spring-boot-starter-web</artifactId>
-         <version>3.3.0</version>
-     </dependency>
-     <dependency>
-         <groupId>com.google.code.gson</groupId>
-         <artifactId>gson</artifactId>
-         <version>2.10.1</version>
-     </dependency>
      <dependency>
          <groupId>org.junit.jupiter</groupId>
          <artifactId>junit-jupiter-engine</artifactId>
@@ -48,6 +29,28 @@
          <artifactId>junit-jupiter</artifactId>
          <version>${junit-version}</version>
          <scope>test</scope>
+     </dependency>
+     <dependency>
+         <groupId>org.apache.maven.plugins</groupId>
+         <artifactId>maven-surefire-plugin</artifactId>
+         <version>3.3.1</version>
+     </dependency>
+     <dependency>
+         <groupId>org.mockito</groupId>
+         <artifactId>mockito-core</artifactId>
+         <version>5.11.0</version>
+         <scope>test</scope>
+     </dependency>
+     <!--  Testing  -->
+     <dependency>
+         <groupId>org.projectlombok</groupId>
+         <artifactId>lombok</artifactId>
+         <version>1.18.34</version>
+     </dependency>
+     <dependency>
+         <groupId>com.google.code.gson</groupId>
+         <artifactId>gson</artifactId>
+         <version>2.10.1</version>
      </dependency>
  </dependencies>
 
